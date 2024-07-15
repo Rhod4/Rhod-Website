@@ -14,8 +14,8 @@ export default function MainNav() {
         type: 'link'
     },
     {
-        text: "Portfolio",
-        link: "/portfolio",
+        text: "Image Of Me",
+        link: "/",
         type: 'image'
     },
     {
@@ -42,7 +42,7 @@ export default function MainNav() {
                 </div>
                 }
                 {item.type === 'image' &&
-                <div className="hidden relative md:flex justify-center">
+                <div className="hidden relative md:flex justify-center" key={item.text}>
                     <div className="absolute w-[200px] h-[200px] -mt-[8rem] ">
                     <Image
                         src={"/images/me/safety-boat.jpg"}

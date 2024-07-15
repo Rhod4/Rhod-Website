@@ -1,0 +1,36 @@
+.screenshots div span {
+    background-color: transparent;
+    color: white !important;
+}
+.screenshots:hover div div {
+    background-color: black;
+    opacity: 70%;
+}
+.screenshots div div {
+    opacity: 0;
+}
+.screenshots div span {
+    opacity: 0;
+}
+.screenshots:hover div span {
+    color: white !important;
+    opacity: 100%;
+}
+.screenshots div {
+    transition: all .3s;
+}
+.screenshots:Not(:hover) div {
+    transition: all .8s;
+}
+.screenshots div span {
+    transition: all .5s;
+}
+.screenshots:hover img {
+    transition: all .5s;
+    transform: scale(110%);
+
+}
+.screenshots:Not(:hover) img {
+    transition: all .5s;
+
+}

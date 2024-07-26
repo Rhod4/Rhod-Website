@@ -336,7 +336,7 @@ export default function Page() {
   return (
     <>
       <div className={tab.tab}>
-        <div className="flex w-full flex-col">
+        <div className="flex w-full flex-col overflow-hidden">
           <Tabs
             aria-label="Options"
             items={portfolio}
@@ -345,6 +345,7 @@ export default function Page() {
           >
             {(company) => (
               <Tab key={company.name} title={company.name} className="tab">
+                <div className="overflow-scroll md:overflow-auto">
                 <Tabs
                   aria-label="Options"
                   items={company.customer}
@@ -354,7 +355,7 @@ export default function Page() {
                     <Tab
                       key={customer.name}
                       title={customer.name}
-                      className="tabs"
+                      className="tab"
                     >
                       <Tabs
                         aria-label="Options"
@@ -425,6 +426,7 @@ export default function Page() {
                     </Tab>
                   )}
                 </Tabs>
+                </div>
               </Tab>
             )}
           </Tabs>

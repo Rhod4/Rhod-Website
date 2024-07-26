@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full">
-      <div className="grid grid-cols-2 justify-between">
-        <div className="flex flex-col my-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 justify-between">
+        <div className="flex flex-col my-auto mb-5 sm:mb-0">
           <p className="mb-4 text-center">
             My name is Rhodri Smith and I am a software developer from South West Wales, Pembrokeshire to be precise.
           </p>

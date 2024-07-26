@@ -28,7 +28,7 @@ export default function MainFooter() {
 
     return <div className={"flex w-full justify-around py-10 border-t-1"}>
         {navItems.map(item => {
-           return <div className="">
+           return <div className="" key={item.link}>
             <Link href={item.link}>
                 {item.text}
             </Link>
